@@ -15,11 +15,13 @@ body {
   
   /* Hero Section */
   
-  #about_me {
+  .about_me {
     background-image: url("../img/beto_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    min-height: 95vh;
+    align-items: center;
     
   }
   
@@ -56,8 +58,6 @@ body {
     color: white;
     
   }
-
-  
 
   .my_experience .icono {
     width: 80px;
@@ -99,7 +99,7 @@ body {
 
   @media (max-width: 768px) {
     
-  #about_me {
+  .about_me {
     background-position: 60% center;
   }
    

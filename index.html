@@ -70,37 +70,39 @@
       </div>
     </nav>
 
-    <header id="about_me" class="text-light py-5 mt-5">
+    <header class="about_me text-light py-5 mt-5 d-flex">
       <div class="container">
         <div class="col-12 col-md-7">
           <h1 class="display-1 fw-bold my-5">
             Hi, my name is <br />
             Alberto Luna
           </h1>
-          <p class="my-5 sombra">
-            Welcome to my Portfolio. <br />
-            I am a 36-year-old Chilean man living in New Zealand as a permanent
-            resident. Back in my country, I worked as a qualified occupational
-            health and safety engineer in industries as construction,
-            manufacturing, and industrial maintenance. <br />
-            Currently, I am studying to be a Fullstack Javascript Developer in
-            Desafio Latam.
-          </p>
-          <div class="mb-5 pb-5">
-            <a
-              href="#portfolio"
-              class="btn btn-lg btn-outline-info text-light me-4"
-            >
-              Portfolio
-            </a>
-            <a href="#contact_me" class="btn btn-lg btn-info text-light"
-              >Contact me</a
-            >
-          </div>
         </div>
       </div>
     </header>
+    <!--About me-->
+    <section id="about_me" class="mb-5 my_experience">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">About me</h2>
 
+        <div class="row">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="my-5 fs-4 text">
+              Welcome to my Portfolio. <br />
+              <br />
+              I am a 36-year-old Chilean man living in New Zealand as a
+              permanent resident. Back in my country, I worked as a qualified
+              occupational health and safety engineer in industries as
+              construction, manufacturing, and industrial maintenance. <br />
+              Currently, I am studying to be a Fullstack Javascript Developer in
+              Desafio Latam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Education-->
     <section id="education" class="container text-center mb-5 pt-5">
       <h2 class="display-3 fw-bold my-4">Education</h2>
 
@@ -161,20 +163,13 @@
       <div class="container px-4 py-5">
         <h2 class="pb-2 border-bottom">My Experience</h2>
 
-        <div
-          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
-        >
-          <div class="col d-flex flex-column align-items-start gap-2">
-            <h2 class="fw-bold text-light">The Multitasking Guy</h2>
-            <p class="text-light">
-              I am a Health and Safety Advisor with a Engineering Degree but
-              since I moved to New Zealand I had different jobs and experience
-              working in factories and construction field and I am currently
-              studying a Bootcamp to be a Fullstack Javascript Developer in
-              Desafio Latam.
-            </p>
-          </div>
-
+        <p class="text-light">
+          I am a Health and Safety Advisor with a Engineering Degree but since I
+          moved to New Zealand I had different jobs and experience working in
+          factories and construction field and I am currently studying a
+          Bootcamp to be a Fullstack Javascript Developer in Desafio Latam.
+        </p>
+        <div class="row align-items-md-center g-5 py-5">
           <div class="col">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <div class="col d-flex flex-column gap-2">
@@ -267,99 +262,177 @@
       </div>
     </section>
     <section id="portfolio" class="pt-5">
-    <h2 class="display-3 fw-bold my-5 te text-center">Portfolio</h2>
-    <div class="container">
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <h2 class="display-3 fw-bold my-5 te text-center">Portfolio</h2>
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="https://lunatico87.github.io/desafio_html/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/desafio1web.jpg"
+                  class="d-block w-100"
+                  alt="Desafio HTML"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desafio 1: HTML</h5>
+                <p>Created a CV using just HTML markup.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://lunatico87.github.io/desafio_css/"
+                target="_blank"
+                ><img
+                  src="./assets/img/desafio2web.jpg"
+                  class="d-block w-100"
+                  alt="Desafio CSS"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desafio 2: CSS</h5>
+                <p>Created a website using just CSS language and HTML markup</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://lunatico87.github.io/desafio_flex/"
+                target="_blank"
+                ><img
+                  src="./assets/img/desafio3web.jpg"
+                  class="d-block w-100"
+                  alt="Desafio Flex"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desafio 3: Flex</h5>
+                <p>
+                  Created the same website as requested using HTML, CSS and flex
+                  properties
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://lunatico87.github.io/desafio_bootstrap/"
+                target="_blank"
+                ><img
+                  src="./assets/img/desafio4web.jpg"
+                  class="d-block w-100"
+                  alt="Desafio Bootstrap"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desafio 4: Bootstrap</h5>
+                <p>Created the same website as requested using Bootstrap</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://lunatico87.github.io/fdsw-github/"
+                target="_blank"
+                ><img
+                  src="./assets/img/desafio5web.jpg"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desafio 5: Git-Github</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-         <a href="https://lunatico87.github.io/desafio_html/" target="_blank"> <img src="./assets/img/desafio1web.jpg" class="d-block w-100" alt="Desafio HTML"></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Desafio 1: HTML</h5>
-            <p>Created a CV using just HTML markup. </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="https://lunatico87.github.io/desafio_css/" target="_blank"><img src="./assets/img/desafio2web.jpg" class="d-block w-100" alt="Desafio CSS"></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Desafio 2: CSS</h5>
-            <p>Created a website using just CSS language and HTML markup</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="https://lunatico87.github.io/desafio_flex/" target="_blank"><img src="./assets/img/desafio3web.jpg" class="d-block w-100" alt="Desafio Flex"></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Desafio 3: Flex</h5>
-            <p>Created the same website as requested using HTML, CSS and flex properties</p>
-          </div>
-          
-        </div>
-        <div class="carousel-item">
-          <a href="https://lunatico87.github.io/desafio_bootstrap/" target="_blank"><img src="./assets/img/desafio4web.jpg" class="d-block w-100" alt="Desafio Bootstrap"></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Desafio 4: Bootstrap</h5>
-            <p>Created the same website as requested using Bootstrap</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="https://lunatico87.github.io/fdsw-github/" target="_blank"><img src="./assets/img/desafio5web.jpg" class="d-block w-100" alt="..."></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Desafio 5: Git-Github</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
+    </section>
     <!--Contact me-->
 
-    <section id="contact_me" >
+    <section id="contact_me">
       <div class="container pb-3 mt-5 mb-3">
-      <h2 class="display-4 fw-bold text-center my-4 py-5">Contact me</h2>
+        <h2 class="display-4 fw-bold text-center my-4 py-5">Contact me</h2>
 
-      <p class="text-center pb-4 mb-3 d-md-block">
-        If you need my help, advices, services or just to get in touch with me, fill the following form. 
-      </p>
+        <p class="text-center pb-4 mb-3 d-md-block">
+          If you need my help, advices, services or just to get in touch with
+          me, fill the following form.
+        </p>
 
-      <form>
-        <div class="form-group mb-4">
-          <label class="mb-2">Name</label>
-          <input class="form-control" placeholder="Name" />
-        </div>
+        <form>
+          <div class="form-group mb-4">
+            <label class="mb-2">Name</label>
+            <input class="form-control" placeholder="Name" />
+          </div>
 
-        <div class="form-group mb-4">
-          <label class="mb-2">E-mail</label>
-          <input class="form-control" placeholder="E-mail" />
-        </div>
+          <div class="form-group mb-4">
+            <label class="mb-2">E-mail</label>
+            <input class="form-control" placeholder="E-mail" />
+          </div>
 
-        <div class="form-group">
-          <label class="mb-2">Message</label>
-          <textarea
-            class="form-control"
-            placeholder="Write here your message"
-          ></textarea>
-        </div>
+          <div class="form-group">
+            <label class="mb-2">Message</label>
+            <textarea
+              class="form-control"
+              placeholder="Write here your message"
+            ></textarea>
+          </div>
 
-        <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Send</button>
-        </div>
-      </form>
-    </div>
+          <div class="my-3 text-end">
+            <button class="btn btn-info text-light">Send</button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <footer class="bg-dark text-center text-light p-4">
