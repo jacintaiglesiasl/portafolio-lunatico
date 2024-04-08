@@ -94,16 +94,15 @@ body {
   }
   
   #contact_me .form{
-padding-bottom: 5rem;
+  padding-bottom: 5rem;
   }
+
   @media (max-width: 768px) {
-    #Contacto form label {
-      font-weight: 400;
-    }
-  
-    .navbar-brand{
-      width: 100px;
-    }
+    
+  #about_me {
+    background-position: 60% center;
+  }
+   
   
   }
   
