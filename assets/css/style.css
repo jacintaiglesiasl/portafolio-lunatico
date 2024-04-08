@@ -8,6 +8,9 @@ body {
     color: #194360;
     
   }
+  .nav-link:active, .nav-link:hover, .nav-link:focus{
+    color: #51b1f2;
+  }
   .navbar-toggler, .navbar-toggler-icon {
     color: #194360;
 
